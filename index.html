@@ -17,12 +17,29 @@
     font-size: 15px;
   }
 
+  .top-bar {
+    background: #c8161d;
+    height: 6px;
+    width: 100%;
+  }
+
   .header {
-    background: linear-gradient(135deg, #1a3c6e 0%, #0d2b5c 100%);
+    background: linear-gradient(135deg, #b11116 0%, #8b0f13 100%);
     color: #fff;
     padding: 40px 20px 30px;
     text-align: center;
-    border-bottom: 4px solid #c8161d;
+    border-bottom: 3px solid #ffd700;
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffd700 0%, #c8161d 50%, #ffd700 100%);
   }
 
   .header h1 {
@@ -30,22 +47,23 @@
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   }
 
   .header .subtitle {
     font-size: 14px;
-    color: #a8c4e8;
+    color: #f5d6d8;
     margin-bottom: 15px;
   }
 
   .header .meta-bar {
     display: inline-block;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,215,0,0.4);
     border-radius: 4px;
     padding: 6px 20px;
     font-size: 13px;
-    color: #d4e4f7;
+    color: #fff3cd;
   }
 
   .container {
@@ -56,7 +74,7 @@
 
   .intro {
     background: #fff;
-    border-left: 4px solid #1a3c6e;
+    border-left: 4px solid #c8161d;
     padding: 15px 20px;
     margin-bottom: 25px;
     font-size: 14px;
@@ -65,14 +83,14 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
 
-  .intro strong { color: #1a3c6e; }
+  .intro strong { color: #c8161d; }
 
   .category {
     margin-bottom: 35px;
   }
 
   .category-header {
-    background: #1a3c6e;
+    background: linear-gradient(135deg, #c8161d 0%, #a01218 100%);
     color: #fff;
     padding: 12px 20px;
     font-size: 18px;
@@ -81,6 +99,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    border-left: 5px solid #ffd700;
   }
 
   .category-header::before {
@@ -88,7 +107,7 @@
     display: inline-block;
     width: 4px;
     height: 20px;
-    background: #c8161d;
+    background: #ffd700;
     border-radius: 2px;
   }
 
@@ -104,19 +123,19 @@
   .policy-card:last-child { margin-bottom: 0; }
 
   .policy-title {
-    background: #f5f7fa;
+    background: linear-gradient(135deg, #fef0f0 0%, #fce8e8 100%);
     padding: 12px 20px;
-    border-bottom: 1px solid #e8eaed;
+    border-bottom: 2px solid #c8161d;
     font-size: 16px;
     font-weight: 700;
-    color: #1a3c6e;
+    color: #c8161d;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .policy-title .policy-num {
-    background: #1a3c6e;
+    background: #c8161d;
     color: #fff;
     font-size: 12px;
     padding: 2px 8px;
@@ -144,8 +163,8 @@
 
   .effect-label {
     display: inline-block;
-    background: #e8f0fe;
-    color: #1a3c6e;
+    background: #c8161d;
+    color: #fff;
     font-size: 12px;
     font-weight: 700;
     padding: 3px 10px;
@@ -180,7 +199,7 @@
     top: 14px;
     width: 6px;
     height: 6px;
-    background: #1a3c6e;
+    background: #c8161d;
     border-radius: 50%;
   }
 
@@ -204,11 +223,12 @@
   }
 
   .data-table th {
-    background: #1a3c6e;
+    background: #c8161d;
     color: #fff;
     padding: 8px 10px;
     text-align: left;
     font-weight: 500;
+    border-bottom: 2px solid #ffd700;
   }
 
   .data-table td {
@@ -221,7 +241,7 @@
   }
 
   .data-table tr:hover td {
-    background: #e8f0fe;
+    background: #fef0f0;
   }
 
   .source-list {
@@ -242,11 +262,11 @@
     content: '▪';
     position: absolute;
     left: 2px;
-    color: #1a3c6e;
+    color: #c8161d;
   }
 
   .source-list a {
-    color: #1a3c6e;
+    color: #c8161d;
     text-decoration: none;
   }
 
@@ -275,23 +295,23 @@
   }
 
   .footer {
-    background: #1a3c6e;
-    color: #a8c4e8;
+    background: linear-gradient(135deg, #8b0f13 0%, #6b0b0f 100%);
+    color: #f5d6d8;
     text-align: center;
     padding: 25px 20px;
     font-size: 12px;
     margin-top: 30px;
-    border-top: 4px solid #c8161d;
+    border-top: 4px solid #ffd700;
   }
 
   .footer p { margin-bottom: 5px; }
 
   .footer .disclaimer {
-    color: #6a8ab5;
+    color: #d4a0a2;
     font-size: 11px;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,215,0,0.2);
   }
 
   .nav-bar {
@@ -307,23 +327,24 @@
     display: inline-block;
     padding: 4px 12px;
     margin: 2px;
-    background: #f5f7fa;
-    color: #1a3c6e;
+    background: #fef0f0;
+    color: #c8161d;
     text-decoration: none;
     font-size: 13px;
     border-radius: 3px;
-    border: 1px solid #e8eaed;
+    border: 1px solid #f5c6c6;
   }
 
   .nav-bar a:hover {
-    background: #1a3c6e;
+    background: #c8161d;
     color: #fff;
   }
 
   .nav-bar .nav-title {
     font-size: 12px;
-    color: #888;
+    color: #c8161d;
     margin-right: 8px;
+    font-weight: 700;
   }
 
   .section-anchor { scroll-margin-top: 20px; }
@@ -331,19 +352,16 @@
 </head>
 <body>
 
+<div class="top-bar"></div>
 <div class="header">
   <h1>海南自贸港重要政策执行效果动态更新</h1>
   <div class="subtitle">Hainan Free Trade Port Policy Implementation Effects Tracker</div>
   <div class="meta-bar">
-    数据更新日期：2026年8月18日　|　数据来源：全网公开信息检索　|　封面文档日期：2026年8月12日
+    数据更新日期：2026年8月18日　|　数据来源：全网公开信息检索
   </div>
 </div>
 
 <div class="container">
-
-  <div class="intro">
-    <strong>说明：</strong>本页面基于《海南自贸港重要政策》汇编文档（2026年8月12日版），每日凌晨通过全网检索更新各政策"执行效果"部分。数据来源于政府官网、新闻媒体报道及微信公众号等公开渠道，仅供决策参考。海南自贸港于<strong>2025年12月18日</strong>正式全岛封关运作，以下数据均以此为重要时间节点。
-  </div>
 
   <div class="nav-bar">
     <span class="nav-title">快速导航：</span>
