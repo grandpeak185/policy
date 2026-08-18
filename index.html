@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海南自贸港重要政策执行效果动态更新</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'Microsoft YaHei', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #1a3c6e 0%, #0d2b5c 100%);
+    color: #fff;
+    padding: 40px 20px 30px;
+    text-align: center;
+    border-bottom: 4px solid #c8161d;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .header .subtitle {
+    font-size: 14px;
+    color: #a8c4e8;
+    margin-bottom: 15px;
+  }
+
+  .header .meta-bar {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    padding: 6px 20px;
+    font-size: 13px;
+    color: #d4e4f7;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+
+  .intro {
+    background: #fff;
+    border-left: 4px solid #1a3c6e;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  .intro strong { color: #1a3c6e; }
+
+  .category {
+    margin-bottom: 35px;
+  }
+
+  .category-header {
+    background: #1a3c6e;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .category-header::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: #c8161d;
+    border-radius: 2px;
+  }
+
+  .policy-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .policy-card:last-child { margin-bottom: 0; }
+
+  .policy-title {
+    background: #f5f7fa;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e8eaed;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a3c6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .policy-title .policy-num {
+    background: #1a3c6e;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  .policy-body {
+    padding: 15px 20px;
+  }
+
+  .policy-content {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e8eaed;
+  }
+
+  .policy-content strong { color: #444; }
+
+  .effect-section {
+    margin-top: 8px;
+  }
+
+  .effect-label {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #1a3c6e;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+
+  .effect-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.9;
+  }
+
+  .effect-content p { margin-bottom: 8px; }
+
+  .effect-content ul {
+    list-style: none;
+    margin: 8px 0;
+    padding-left: 0;
+  }
+
+  .effect-content li {
+    padding: 4px 0 4px 18px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .effect-content li::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    width: 6px;
+    height: 6px;
+    background: #1a3c6e;
+    border-radius: 50%;
+  }
+
+  .highlight-box {
+    background: #fffbe6;
+    border: 1px solid #ffe58f;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #614700;
+  }
+
+  .highlight-box strong { color: #c8161d; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 13px;
+  }
+
+  .data-table th {
+    background: #1a3c6e;
+    color: #fff;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .data-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e8eaed;
+  }
+
+  .data-table tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  .data-table tr:hover td {
+    background: #e8f0fe;
+  }
+
+  .source-list {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #e8eaed;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .source-list .source-item {
+    margin-bottom: 3px;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .source-list .source-item::before {
+    content: '▪';
+    position: absolute;
+    left: 2px;
+    color: #1a3c6e;
+  }
+
+  .source-list a {
+    color: #1a3c6e;
+    text-decoration: none;
+  }
+
+  .source-list a:hover { text-decoration: underline; }
+
+  .update-tag {
+    display: inline-block;
+    background: #e6f7e6;
+    color: #2d7d2d;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+    border: 1px solid #b7eb8f;
+  }
+
+  .no-update-tag {
+    display: inline-block;
+    background: #f5f5f5;
+    color: #999;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .footer {
+    background: #1a3c6e;
+    color: #a8c4e8;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 12px;
+    margin-top: 30px;
+    border-top: 4px solid #c8161d;
+  }
+
+  .footer p { margin-bottom: 5px; }
+
+  .footer .disclaimer {
+    color: #6a8ab5;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .nav-bar {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .nav-bar a {
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 2px;
+    background: #f5f7fa;
+    color: #1a3c6e;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #e8eaed;
+  }
+
+  .nav-bar a:hover {
+    background: #1a3c6e;
+    color: #fff;
+  }
+
+  .nav-bar .nav-title {
+    font-size: 12px;
+    color: #888;
+    margin-right: 8px;
+  }
+
+  .section-anchor { scroll-margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>海南自贸港重要政策执行效果动态更新</h1>
+  <div class="subtitle">Hainan Free Trade Port Policy Implementation Effects Tracker</div>
+  <div class="meta-bar">
+    数据更新日期：2026年8月18日　|　数据来源：全网公开信息检索　|　封面文档日期：2026年8月12日
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="intro">
+    <strong>说明：</strong>本页面基于《海南自贸港重要政策》汇编文档（2026年8月12日版），每日凌晨通过全网检索更新各政策"执行效果"部分。数据来源于政府官网、新闻媒体报道及微信公众号等公开渠道，仅供决策参考。海南自贸港于<strong>2025年12月18日</strong>正式全岛封关运作，以下数据均以此为重要时间节点。
+  </div>
+
+  <div class="nav-bar">
+    <span class="nav-title">快速导航：</span>
+    <a href="#cat1">一、税收政策</a>
+    <a href="#cat2">二、贸易政策</a>
+    <a href="#cat3">三、运输政策</a>
+  </div>
+
+  <!-- ============ 一、税收政策 ============ -->
+  <div class="category section-anchor" id="cat1">
+    <div class="category-header">一、税收政策</div>
+
+    <!-- 政策1: 企业所得税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（一）企业所得税</span>
+        <span class="policy-num">政策1</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对注册在海南自贸港并实质性运营的鼓励类产业企业，减按15%的税率征收企业所得税；对旅游业、现代服务业、高新技术产业企业新增境外直接投资取得的所得，免征企业所得税。"双15%"所得税政策已延续至2027年12月31日。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <ul>
+              <li><strong>封关半年成效（2026.06.17）：</strong>享受海南自贸港税收优惠政策的经营主体占全省不到0.3%，却贡献了全省近1/3的税收。自贸港鼓励类产业目录达1249条，为全国最长。</li>
+              <li><strong>减税降费累计（2025.12.19）：</strong>2025年1月至8月，海南支持科技创新和制造业发展的主要政策累计减税降费及退税达109亿元。</li>
+              <li><strong>政策延续：</strong>"双15%"所得税政策（企业所得税15%、个人所得税15%）已明确延续至2027年12月31日。</li>
+              <li><strong>企业案例：</strong>海南某演艺公司4年间累计享受15%企业所得税优惠减税2500万元；齐鲁制药（海南）累计获超2000万元税收减免。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="https://www.hnftp.gov.cn/xwzx/ywsd/202606/t20260618_4096015.html" target="_blank">封关半年，海南自贸港税收优惠"组合拳"成效几何？（海南自由贸易港官网/海南日报，2026-06-17）</a></div>
+            <div class="source-item"><a href="https://www.chinatax.gov.cn/chinatax/n810219/n810739/c5246137/content.html" target="_blank">海南：精准服务强保障 全力护航自贸港封关运作（国家税务总局，2025-12-19）</a></div>
+            <div class="source-item"><a href="https://www.hainan.gov.cn/hainan/c100718/202508/82e48e6ad2ba423f8b36f718ea7a24bf.shtml" target="_blank">海南自贸港企业所得税优惠政策延续实施（海南省人民政府网，2025-08）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策2: 个人所得税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（二）个人所得税</span>
+        <span class="policy-num">政策2</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对在海南自贸港工作的高端人才和紧缺人才，其个人所得税实际税负超过15%的部分予以免征。政策延续至2027年12月31日。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <ul>
+              <li><strong>累计享惠（截至2024.12）：</strong>海南自贸港个人所得税优惠政策已累计享惠3.9万人次，在个税优惠政策效应带动下，海南累计吸引各类人才超过93万人。</li>
+              <li><strong>新办法优化升级（2025.08）：</strong>海南省人民政府发布新版《高端紧缺人才清单管理办法》（琼府〔2025〕43号），将合理离岛出差、探亲、休假纳入累计天数，同时要求实际居住不少于90天，精准匹配人才离岛展业需求。</li>
+              <li><strong>2026年版热点问答：</strong>海南省人社厅发布《享受海南自贸港个人所得税优惠政策热点问答（2026年版）》，明确年度收入达30万元以上人员无须先认定为高层次人才，享惠流程进一步简化。</li>
+              <li><strong>居住天数核算：</strong>一个纳税年度内累计居住满183天（合理离岛出差、休假等最多计入93天），且实际居住不少于90天。</li>
+            </ul>
+            <div class="highlight-box"><strong>备注：</strong>累计享惠人次最新公开数据仍停留在2024年12月底的3.9万人次，暂未检索到2025-2026年更新的累计数据。</div>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="http://www.hq.xinhuanet.com/20250819/1faf45409a254b5ca408be44dc182032/c.html" target="_blank">直播自贸港丨海南优化个税优惠新政 引才聚才助力自贸港建设（新华网，2025-08-19）</a></div>
+            <div class="source-item"><a href="https://hrss.hainan.gov.cn/hrss/hygq/202602/eb9617aca312427fa508e6f9a4a810e9.shtml" target="_blank">享受海南自贸港个人所得税优惠政策热点问答2026年版（海南省人社厅，2026-02-06）</a></div>
+            <div class="source-item"><a href="https://www.hainan.gov.cn/hainan/szfwj/202508/cf6d1aed9a1947b0a5d318cf2ea65d2a.shtml" target="_blank">琼府〔2025〕43号 高端紧缺人才清单管理办法（海南省人民政府，2025-08）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策3: 国际运输船舶增值税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（三）国际运输船舶增值税</span>
+        <span class="policy-num">政策3</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对境内建造船舶企业向运输企业销售且同时符合条件的船舶，实行增值税退税政策，由购进船舶的运输企业向主管税务机关申请退税。购进船舶须在"中国洋浦港"登记并从事国际运输和港澳台运输业务。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <ul>
+              <li><strong>境内建造船舶退税（截至2026.06）：</strong>累计为16艘境内新建船舶办理增值税退税超5亿元（基线为10艘/4.07亿元，新增6艘、退税额增加约0.93亿元）。</li>
+              <li><strong>进口船舶免税：</strong>累计53艘进口船舶享受免税政策，减免税额超15.1亿元。</li>
+              <li><strong>船队规模突破：</strong>8月18日"中国洋浦港"籍国际船舶总数突破100艘（达101艘），总运力突破890万载重吨，稳居全国自贸区（港）首位。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="http://jt.hainan.gov.cn/ywdt_384/xxlb/202607/t20260712_4109117_mo.html" target="_blank">潮涌南海千帆竞！海南自贸港加快建立更加自由开放航运制度（海南省交通运输厅，2026-07-12）</a></div>
+            <div class="source-item"><a href="https://news.cctv.com/2026/08/18/ARTI4VLuiZgvqLZfIP5YQJWC260818.shtml" target="_blank">"中国洋浦港"籍国际船舶总数破100艘（央视网，2026-08-18）</a></div>
+            <div class="source-item"><a href="https://www.danzhou.gov.cn/danzhou/ywdt/jrdz/202512/t20251216_3989642.html" target="_blank">封关一线 | 洋浦交通运输和港航局（儋州市人民政府网，2025-12-16）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策4: 启运港退税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（四）启运港退税</span>
+        <span class="policy-num">政策4</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对符合条件的出口企业从启运港启运报关出口、由符合条件的运输企业承运、从水路转关直航或经停指定口岸、自离境港（洋浦港）离境的集装箱货物，实行启运港退税政策。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">新增数据</span></div>
+          <div class="effect-content">
+            <div class="highlight-box"><strong>重大进展：</strong>原文档标注"无公开报道"，现已检索到首批公开数据。</div>
+            <ul>
+              <li><strong>退税金额：</strong>启运港退税业务已逐渐市场化，总计申报退税金额14万元（起步推广阶段）。</li>
+              <li><strong>东北地区首票业务（2026.05.29）：</strong>80.1吨出口膨润土猫砂（3个集装箱）经锦州港发往洋浦港，为东北地区首票借道海南自贸港出境的水水中转多式联运业务。</li>
+              <li><strong>效率优势：</strong>企业可提前半个月办结出口退税，比内地快3-5天，单箱货物可节约物流成本1000余元。</li>
+              <li><strong>贸易增长：</strong>自封关至2026年2月底，海南货物贸易进出口654.9亿元，同比增长29.1%。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="https://www.danzhou.gov.cn/danzhou/ywdt/jrdz/202512/t20251216_3989642.html" target="_blank">封关一线 | 洋浦交通运输和港航局（儋州市人民政府网，2025-12-16）</a></div>
+            <div class="source-item"><a href="http://www.customs.gov.cn/customs/2026-06/05/article_2026060516445021959.html" target="_blank">东北地区首票经海南自贸港出口水水中转多式联运业务落地（海关总署，2026-06-05）</a></div>
+            <div class="source-item"><a href="https://news.cctv.com/2026/03/27/ARTIWF9sqU9djcUuE0B877ty260327.shtml" target="_blank">封关百日观察 | 海南自贸港呈现新气象（央视网，2026-03-27）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策5: 保税油加注 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（五）保税油加注</span>
+        <span class="policy-num">政策5</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对以洋浦港作为中转港从事内外贸同船运输的境内船舶，允许在洋浦港加注本航次所需的保税油；本地生产燃料油实行出口退税。免征关税、增值税和消费税。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <table class="data-table">
+              <thead><tr><th>时间节点</th><th>加注艘次</th><th>加注量</th><th>同比</th></tr></thead>
+              <tbody>
+                <tr><td>封关首月（2025.12.18起）</td><td>73艘次</td><td>40,360吨</td><td>+35.19% / +82.94%</td></tr>
+                <tr><td>封关三个月（至2026.03）</td><td>199艘次</td><td>9.46万吨</td><td>+27.56% / +37.50%</td></tr>
+                <tr><td>2026年年度目标</td><td>—</td><td>40万吨</td><td>—</td></tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><strong>改革成效：</strong>申报材料缩减90%以上，单船加油效率提升超30%，保税油加注带来约20%成本节约。</li>
+              <li><strong>港外锚地加注：</strong>5艘次、2400吨（首月），降本15%-20%。</li>
+              <li><strong>港口流量：</strong>封关至3月25日，进出洋浦港国际航行船舶约1408艘次（同比+20%），进出港货物近3174.8万吨（同比+35%）。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="https://jingji.cctv.com/2026/01/18/ARTIc9Ar5B5StsdDRDEVf9Mh260118.shtml" target="_blank">封关首月洋浦港进出港船舶3510艘次（央视网，2026-01-18）</a></div>
+            <div class="source-item"><a href="http://m.chinanews.com/wap/detail/cht/zw/10589568.shtml" target="_blank">海南封关看变化：首季度洋浦保税油加注产业实现多重突破（中国新闻网，2026-03-19）</a></div>
+            <div class="source-item"><a href="https://news.cctv.com/2026/03/27/ARTIWF9sqU9djcUuE0B877ty260327.shtml" target="_blank">封关百日观察 | 海南自贸港呈现新气象（央视网，2026-03-27）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策6: 加工增值免关税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（六）加工增值免关税</span>
+        <span class="policy-num">政策6</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>对海南自贸港内鼓励类产业企业生产的含进口料件在海南自贸港加工增值达到或超过30%的货物，从海南自贸港进入内地免征进口关税，照章征收进口环节增值税和消费税。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <table class="data-table">
+              <thead><tr><th>时间节点</th><th>内销货值</th><th>免征关税</th><th>累计货值</th></tr></thead>
+              <tbody>
+                <tr><td>封关至2026.05.31</td><td>5.8亿元</td><td>3,024.6万元</td><td>—</td></tr>
+                <tr><td>封关至2026.06.30</td><td>6.8亿元</td><td>3,948.2万元</td><td>—</td></tr>
+                <tr><td>政策实施5年累计</td><td>—</td><td>9.2亿元</td><td>超121亿元</td></tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><strong>覆盖范围：</strong>14个市县、11个行业领域、60种货品。</li>
+              <li><strong>四项优化政策全部落地：</strong>放宽门槛、扩大料件范围、优化计算公式、扩大累计适用范围。</li>
+              <li><strong>企业案例-海润珍珠：</strong>进口580万元珍珠原料，节省税费超120万元，综合税率从46.54%降至21.11%。</li>
+              <li><strong>企业案例-和之力汽车：</strong>专业救护车首单免除15%关税，每辆车节约成本3.7万元。</li>
+              <li><strong>企业案例-臻格食品：</strong>进口原料135吨、货值129.6万元，免征关税约4.4万元。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="https://www.hainan.gov.cn/hainan/zmqjxsm/202607/5d54162025ff4692a644e2df66cb9e39.shtml" target="_blank">海南自贸港加工增值免关税政策实施5年来——享惠货值超121亿元（海南省人民政府网，2026-07）</a></div>
+            <div class="source-item"><a href="https://wap.chinanews.com/wap/detail/chs/zw/10642400.shtml" target="_blank">海南封关半年 加工增值红利惠及中外企业（中国新闻网，2026-06-17）</a></div>
+            <div class="source-item"><a href="http://www.ce.cn/xwzx/gnsz/gdxw/202606/t20260617_3037302.shtml" target="_blank">截至5月31日 海南"零关税"政策进口货值达26.45亿元（中国经济网，2026-06-17）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策7: 零关税 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（七）零关税</span>
+        <span class="policy-num">政策7</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>海南自贸港与境外之间设立"一线"，进口征税商品目录以外的货物免征进口关税、进口环节增值税和消费税。与内地之间设立"二线"，"零关税"货物进入内地需补缴进口税收。进口征税商品目录共2323个税目，"零关税"商品约6600个税目，零关税水平达74%。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <table class="data-table">
+              <thead><tr><th>时间节点</th><th>享惠主体</th><th>进口货值</th><th>同比增长</th></tr></thead>
+              <tbody>
+                <tr><td>封关至2026.04.30</td><td>—</td><td>22.6亿元</td><td>+99.6%</td></tr>
+                <tr><td>封关至2026.05.31</td><td>—</td><td>26.45亿元</td><td>+120%</td></tr>
+                <tr><td>封关至2026.06.30</td><td>93家</td><td>34.37亿元</td><td>+53.6%</td></tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><strong>减免税款：</strong>封关至5月31日减免税款4.4亿元，同比增长74.1%。</li>
+              <li><strong>通关效率：</strong>通关时间总体压缩20%，通关成本总体下降50%。</li>
+              <li><strong>"零关税"商品范围：</strong>约6600个税目，零关税水平达74%。</li>
+              <li><strong>岛内居民"零关税"正面清单：</strong>202种商品（含榴莲、樱桃、虾等），2026年2月落地。</li>
+              <li><strong>径予放行模式：</strong>5家企业进口货物7万吨、货值2.7亿元。</li>
+              <li><strong>分批出岛集中申报：</strong>13家企业出岛内销货物超1700批次，占"二线"出岛批次近80%。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="http://www.xinhuanet.com/fortune/20260729/b5175f6f48e94c799c7619f5f33a21e3/c.html" target="_blank">海南自贸港发布第23批6项制度集成创新案例（新华网，2026-07-29）</a></div>
+            <div class="source-item"><a href="https://wap.chinanews.com/wap/detail/chs/zw/10668874.shtml" target="_blank">海口海关创新监管保障海南自贸港封关运作"放得开、管得住"（中国新闻网，2026-07-29）</a></div>
+            <div class="source-item"><a href="http://www.ce.cn/xwzx/gnsz/gdxw/202606/t20260617_3037302.shtml" target="_blank">截至5月31日 海南"零关税"政策进口货值达26.45亿元（中国经济网，2026-06-17）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 二、贸易政策 ============ -->
+  <div class="category section-anchor" id="cat2">
+    <div class="category-header">二、贸易政策</div>
+
+    <!-- 政策8: 海关监管 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（一）海关监管</span>
+        <span class="policy-num">政策8</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>海南自贸港与境外之间进出的监管（"一线"），与内地之间进出的监管（"二线"），以及海南自贸港内监管。对"零关税"货物以享惠主体为单元实施电子账册管理。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <table class="data-table">
+              <thead><tr><th>指标</th><th>数据</th><th>时间节点</th></tr></thead>
+              <tbody>
+                <tr><td>货物贸易进出口</td><td>1,739.8亿元（同比+54.6%）</td><td>封关至2026.05.31</td></tr>
+                <tr><td>新增海关备案企业</td><td>10,325家（同比+57.8%）</td><td>封关至2026.05.31</td></tr>
+                <tr><td>离岛免税购物金额</td><td>203.4亿元</td><td>封关至2026.05.31</td></tr>
+                <tr><td>离岛免税购物人次</td><td>274万人次（同比+15.8%）</td><td>封关至2026.05.31</td></tr>
+                <tr><td>货车安检平均时长</td><td>70秒</td><td>封关至2026.06.30</td></tr>
+                <tr><td>享惠快速通关经营主体占比</td><td>超96%</td><td>封关至2026.06.30</td></tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><strong>二线口岸申报简化：</strong>出岛申报项目从105项降至42项，企业平均申报效率提升70%以上。</li>
+              <li><strong>封关首月客货流量：</strong>进出岛旅客593.55万人次，车辆45.99万辆次，民航航空器3.27万架次，船舶1.12万艘次。各监管通道均未发生拥堵。</li>
+              <li><strong>分批出岛集中申报：</strong>13家企业集中申报185次，实现货物分批出岛1708次。</li>
+              <li><strong>反走私：</strong>2025年以来主动查获移交违法违规线索2863条，查处"三无"船舶1494艘。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="http://www.customs.gov.cn/customs/2026-06/18/article_2026061810191014131.html" target="_blank">海南全岛封关进口"零关税"商品已达26.45亿元（海关总署/新华社，2026-06-18）</a></div>
+            <div class="source-item"><a href="http://www.xinhuanet.com/20260729/3f5b1f0d57cc4d2eb708e72c76b79d3a/c.html" target="_blank">海南自贸港发布第23批6项制度集成创新案例（新华网，2026-07-29）</a></div>
+            <div class="source-item"><a href="https://news.cctv.com/2026/01/19/ARTI1LfEZtn0XF8dVcqyUyjE260119.shtml" target="_blank">海南自贸港全岛封关运作首月：平稳开局、成效初显（央视网，2026-01-19）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 政策9: 海关径予放行管理 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（二）海关径予放行管理</span>
+        <span class="policy-num">政策9</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>经海南自贸港对外开放口岸直接进入的保税货物、"零关税"货物，且不实行许可证件管理、不需要依法实施检验检疫的，可选择适用径予放行。政策优势：简化企业申报（节约三分之二时间）、向企业提供14天暂缓入账政策红利。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">有更新</span></div>
+          <div class="effect-content">
+            <ul>
+              <li><strong>报关单精简：</strong>申报项目从105项精简至33项（精简约2/3）。</li>
+              <li><strong>适用量与通关效率：</strong>封关以来7万吨进口货物适用该模式，进口货物平均通关时间压缩20%。</li>
+              <li><strong>企业应用数据：</strong>封关至2026年6月30日，5家企业应用"径予放行"模式进口货物7万吨、货值2.7亿元。</li>
+              <li><strong>分出集报：</strong>13家企业通过"分批出岛、集中申报"模式出岛内销货物超1700批次。</li>
+              <li><strong>企业案例：</strong>珍珠原料进口享受"零关税"且清关便捷，"货到就能提"，报关单备注"径予放行"，企业更能专注生产经营。</li>
+            </ul>
+            <div class="highlight-box"><strong>备注：</strong>基线提到的"14天暂缓入账政策红利"属政策制度设计本身，暂未检索到新的量化执行数据。</div>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="http://www.customs.gov.cn/customs/2026-06/18/article_2026061810191014131.html" target="_blank">海南全岛封关进口"零关税"商品已达26.45亿元（海关总署/新华社，2026-06-18）</a></div>
+            <div class="source-item"><a href="http://www.xinhuanet.com/20260729/3f5b1f0d57cc4d2eb708e72c76b79d3a/c.html" target="_blank">海南自贸港发布第23批6项制度集成创新案例（新华网，2026-07-29）</a></div>
+            <div class="source-item"><a href="https://news.cctv.com/2026/03/24/ARTIiC6PHpA0d3tZKZGAHmGt260324.shtml" target="_blank">自贸港观潮 | 串"珠"成"链"承载政策温度与产业韧性（央视网，2026-03-24）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 三、运输政策 ============ -->
+  <div class="category section-anchor" id="cat3">
+    <div class="category-header">三、运输政策</div>
+
+    <!-- 政策10: 国际船舶登记 -->
+    <div class="policy-card">
+      <div class="policy-title">
+        <span>（一）国际船舶登记</span>
+        <span class="policy-num">政策10</span>
+      </div>
+      <div class="policy-body">
+        <div class="policy-content">
+          <strong>政策要点：</strong>在海南自贸港登记的航行国际航线的船舶，船籍港为"中国洋浦港"。外资股比不受限制。对境外进口和境内建造的国际船舶，船用备件及燃料免税或退税。注册并实质性运营的国际船舶及其辅助性业务经营者享受企业所得税优惠，高级管理人员和船员享受个人所得税优惠。
+        </div>
+        <div class="effect-section">
+          <div class="effect-label">最新执行效果 <span class="update-tag">重大更新</span></div>
+          <div class="effect-content">
+            <div class="highlight-box"><strong>重大里程碑：</strong>2026年8月18日，"中国洋浦港"籍国际船舶总数突破100艘，达101艘，总运力突破890万载重吨。相比7月29日基线（96艘/860万载重吨），20天内新增5艘船舶、30万载重吨运力。</div>
+            <table class="data-table">
+              <thead><tr><th>指标</th><th>基线数据（2026.07.29）</th><th>最新数据（2026.08.18）</th></tr></thead>
+              <tbody>
+                <tr><td>登记在册船舶</td><td>96艘</td><td><strong>101艘</strong></td></tr>
+                <tr><td>总运力</td><td>860万载重吨</td><td><strong>890万载重吨</strong></td></tr>
+                <tr><td>总吨位</td><td>—</td><td>超520万</td></tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><strong>封关以来新增：</strong>新增登记船舶24艘，新增运力146.4万载重吨，同比分别增长41.18%和43.73%。</li>
+              <li><strong>登记效率：</strong>登记周期压缩至一周内，申请材料压减超60%，整体办事时限提升90%。</li>
+              <li><strong>成本节约：</strong>单船最高可节约成本500万元，船舶从入籍至投产运营可节省近一个月周期。落户仅税收优惠一项就超千万元。</li>
+              <li><strong>港口业务：</strong>2026年上半年洋浦港集装箱吞吐量同比增长49.91%，内外贸集装箱班轮航线总数达68条。</li>
+              <li><strong>里程碑船舶：</strong>第100艘"国信海"轮为大型干货船（投入中欧、南美航线），第101艘"荣晟兴"轮为散货船（载重吨38,267吨，投入东南亚航线）。</li>
+              <li><strong>全国排名：</strong>登记数量和运力规模稳居全国自贸区（港）首位，海南国际航行船舶总吨位居全国第二。</li>
+              <li><strong>"一件事一次办"：</strong>2026年3月起落地船舶营运相关业务"一件事一次办"。</li>
+            </ul>
+          </div>
+          <div class="source-list">
+            <div class="source-item"><a href="https://news.cctv.com/2026/08/18/ARTI4VLuiZgvqLZfIP5YQJWC260818.shtml" target="_blank">"中国洋浦港"籍国际船舶总数破100艘 海南自贸港航运枢纽功能持续提升（央视网，2026-08-18）</a></div>
+            <div class="source-item"><a href="http://m.chinanews.com/wap/detail/chs/zw/10679643.shtml" target="_blank">"中国洋浦港"登记在册船舶突破百艘（中国新闻网，2026-08-18）</a></div>
+            <div class="source-item"><a href="http://www.xinhuanet.com/20260818/086a2099a48a423585133f6c7bbe44b4/c.html" target="_blank">"中国洋浦港"船籍港登记在册船舶突破百艘（新华网，2026-08-18）</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>海南自贸港重要政策执行效果动态更新系统</p>
+  <p>自动更新时间：2026年8月18日　|　更新频率：每日凌晨 03:00（北京时间）</p>
+  <p>数据来源：政府官网、新闻媒体、微信公众号等公开网络信息</p>
+  <div class="disclaimer">
+    免责声明：本页面信息来源于公开网络搜索，仅供参考，不构成任何投资或决策建议。<br>
+    如需引用，请以原始来源为准。如有疑问请联系维护团队。
+  </div>
+</div>
+
+</body>
+</html>
