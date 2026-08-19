@@ -348,6 +348,217 @@
   }
 
   .section-anchor { scroll-margin-top: 20px; }
+
+  /* ============ 移动端适配 ============ */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .header {
+      padding: 20px 12px 16px;
+    }
+
+    .header h1 {
+      font-size: 19px;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .header .subtitle {
+      font-size: 11px;
+      margin-bottom: 8px;
+    }
+
+    .header .meta-bar {
+      display: block;
+      padding: 5px 12px;
+      font-size: 11px;
+      margin: 0 8px;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 15px 10px;
+    }
+
+    .nav-bar {
+      padding: 8px 8px;
+      margin-bottom: 15px;
+    }
+
+    .nav-bar .nav-title {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 11px;
+    }
+
+    .nav-bar a {
+      padding: 6px 10px;
+      font-size: 12px;
+      margin: 2px 1px;
+    }
+
+    .category-header {
+      padding: 10px 12px;
+      font-size: 16px;
+      border-left-width: 4px;
+    }
+
+    .category { margin-bottom: 25px; }
+
+    .policy-card { margin-bottom: 15px; }
+
+    .policy-title {
+      padding: 10px 12px;
+      font-size: 15px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .policy-title .policy-num {
+      font-size: 11px;
+      padding: 1px 6px;
+    }
+
+    .policy-body {
+      padding: 12px 12px;
+    }
+
+    .policy-content {
+      font-size: 12px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+    }
+
+    .effect-content {
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .effect-content li {
+      padding: 3px 0 3px 16px;
+      font-size: 13px;
+    }
+
+    .effect-content li::before {
+      top: 12px;
+      width: 5px;
+      height: 5px;
+    }
+
+    .highlight-box {
+      padding: 8px 10px;
+      font-size: 12px;
+      margin: 8px 0;
+    }
+
+    .data-table {
+      font-size: 12px;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .data-table thead,
+    .data-table tbody,
+    .data-table tr,
+    .data-table th,
+    .data-table td {
+      display: block;
+    }
+
+    .data-table thead { display: none; }
+
+    .data-table tr {
+      margin-bottom: 8px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+    }
+
+    .data-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 10px;
+      white-space: normal;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .data-table td::before {
+      content: attr(data-label);
+      font-weight: 700;
+      color: #c8161d;
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+
+    .data-table tr:nth-child(even) td { background: #f9fafb; }
+
+    .source-list {
+      font-size: 11px;
+    }
+
+    .source-list .source-item {
+      padding-left: 12px;
+      margin-bottom: 4px;
+      line-height: 1.6;
+    }
+
+    .source-list a {
+      word-break: break-all;
+      display: inline-block;
+      padding: 2px 0;
+    }
+
+    .footer {
+      padding: 18px 12px;
+      font-size: 11px;
+    }
+
+    .footer .disclaimer {
+      font-size: 10px;
+      line-height: 1.6;
+    }
+  }
+
+  /* 超小屏幕（iPhone SE等） */
+  @media screen and (max-width: 375px) {
+    .header h1 { font-size: 17px; }
+    .header .meta-bar { font-size: 10px; }
+    .container { padding: 10px 6px; }
+    .policy-body { padding: 10px 8px; }
+    .policy-title { padding: 8px 10px; font-size: 14px; }
+    .effect-content { font-size: 12px; }
+    .effect-content li { font-size: 12px; }
+    .source-list { font-size: 10px; }
+    .data-table td { padding: 5px 8px; font-size: 11px; }
+  }
+
+  /* 横屏适配 */
+  @media screen and (max-width: 926px) and (orientation: landscape) {
+    .header { padding: 15px 20px 12px; }
+    .header h1 { font-size: 20px; }
+    .container { padding: 20px 15px; }
+  }
+
+  /* 暗色模式适配（iOS/Android暗色模式） */
+  @media (prefers-color-scheme: dark) {
+    body { background: #1a1a1a; }
+    .nav-bar { background: #2a2a2a; border-color: #444; }
+    .nav-bar a { background: #3a1a1a; border-color: #5a3a3a; }
+    .policy-card { background: #2a2a2a; border-color: #444; }
+    .policy-title { background: linear-gradient(135deg, #3a1a1a 0%, #2e1515 100%); }
+    .policy-content { color: #ccc; border-bottom-color: #444; }
+    .effect-content { color: #ddd; }
+    .data-table tr:nth-child(even) td { background: #333; }
+    .data-table td { border-bottom-color: #444; }
+    .highlight-box { background: #3a3500; border-color: #5a4a00; color: #ffd; }
+    .source-list { color: #999; }
+  }
 </style>
 </head>
 <body>
@@ -523,9 +734,9 @@
             <table class="data-table">
               <thead><tr><th>时间节点</th><th>加注艘次</th><th>加注量</th><th>同比</th></tr></thead>
               <tbody>
-                <tr><td>封关首月（2025.12.18起）</td><td>73艘次</td><td>40,360吨</td><td>+35.19% / +82.94%</td></tr>
-                <tr><td>封关三个月（至2026.03）</td><td>199艘次</td><td>9.46万吨</td><td>+27.56% / +37.50%</td></tr>
-                <tr><td>2026年年度目标</td><td>—</td><td>40万吨</td><td>—</td></tr>
+                <tr><td data-label="时间节点">封关首月（2025.12.18起）</td><td data-label="加注艘次">73艘次</td><td data-label="加注量">40,360吨</td><td data-label="同比">+35.19% / +82.94%</td></tr>
+                <tr><td data-label="时间节点">封关三个月（至2026.03）</td><td data-label="加注艘次">199艘次</td><td data-label="加注量">9.46万吨</td><td data-label="同比">+27.56% / +37.50%</td></tr>
+                <tr><td data-label="时间节点">2026年年度目标</td><td data-label="加注艘次">—</td><td data-label="加注量">40万吨</td><td data-label="同比">—</td></tr>
               </tbody>
             </table>
             <ul>
@@ -564,9 +775,9 @@
             <table class="data-table">
               <thead><tr><th>时间节点</th><th>内销货值</th><th>免征关税</th><th>累计货值</th></tr></thead>
               <tbody>
-                <tr><td>封关至2026.05.31</td><td>5.8亿元</td><td>3,024.6万元</td><td>—</td></tr>
-                <tr><td>封关至2026.06.30</td><td>6.8亿元</td><td>3,948.2万元</td><td>—</td></tr>
-                <tr><td>政策实施5年累计</td><td>—</td><td>9.2亿元</td><td>超121亿元</td></tr>
+                <tr><td data-label="时间节点">封关至2026.05.31</td><td data-label="内销货值">5.8亿元</td><td data-label="免征关税">3,024.6万元</td><td data-label="累计货值">—</td></tr>
+                <tr><td data-label="时间节点">封关至2026.06.30</td><td data-label="内销货值">6.8亿元</td><td data-label="免征关税">3,948.2万元</td><td data-label="累计货值">—</td></tr>
+                <tr><td data-label="时间节点">政策实施5年累计</td><td data-label="内销货值">—</td><td data-label="免征关税">9.2亿元</td><td data-label="累计货值">超121亿元</td></tr>
               </tbody>
             </table>
             <ul>
@@ -609,9 +820,9 @@
             <table class="data-table">
               <thead><tr><th>时间节点</th><th>享惠主体</th><th>进口货值</th><th>同比增长</th></tr></thead>
               <tbody>
-                <tr><td>封关至2026.04.30</td><td>—</td><td>22.6亿元</td><td>+99.6%</td></tr>
-                <tr><td>封关至2026.05.31</td><td>—</td><td>26.45亿元</td><td>+120%</td></tr>
-                <tr><td>封关至2026.06.30</td><td>93家</td><td>34.37亿元</td><td>+53.6%</td></tr>
+                <tr><td data-label="时间节点">封关至2026.04.30</td><td data-label="享惠主体">—</td><td data-label="进口货值">22.6亿元</td><td data-label="同比增长">+99.6%</td></tr>
+                <tr><td data-label="时间节点">封关至2026.05.31</td><td data-label="享惠主体">—</td><td data-label="进口货值">26.45亿元</td><td data-label="同比增长">+120%</td></tr>
+                <tr><td data-label="时间节点">封关至2026.06.30</td><td data-label="享惠主体">93家</td><td data-label="进口货值">34.37亿元</td><td data-label="同比增长">+53.6%</td></tr>
               </tbody>
             </table>
             <ul>
@@ -660,12 +871,12 @@
             <table class="data-table">
               <thead><tr><th>指标</th><th>数据</th><th>时间节点</th></tr></thead>
               <tbody>
-                <tr><td>货物贸易进出口</td><td>1,739.8亿元（同比+54.6%）</td><td>封关至2026.05.31</td></tr>
-                <tr><td>新增海关备案企业</td><td>10,325家（同比+57.8%）</td><td>封关至2026.05.31</td></tr>
-                <tr><td>离岛免税购物金额</td><td>203.4亿元</td><td>封关至2026.05.31</td></tr>
-                <tr><td>离岛免税购物人次</td><td>274万人次（同比+15.8%）</td><td>封关至2026.05.31</td></tr>
-                <tr><td>货车安检平均时长</td><td>70秒</td><td>封关至2026.06.30</td></tr>
-                <tr><td>享惠快速通关经营主体占比</td><td>超96%</td><td>封关至2026.06.30</td></tr>
+                <tr><td data-label="指标">货物贸易进出口</td><td data-label="数据">1,739.8亿元（同比+54.6%）</td><td data-label="时间节点">封关至2026.05.31</td></tr>
+                <tr><td data-label="指标">新增海关备案企业</td><td data-label="数据">10,325家（同比+57.8%）</td><td data-label="时间节点">封关至2026.05.31</td></tr>
+                <tr><td data-label="指标">离岛免税购物金额</td><td data-label="数据">203.4亿元</td><td data-label="时间节点">封关至2026.05.31</td></tr>
+                <tr><td data-label="指标">离岛免税购物人次</td><td data-label="数据">274万人次（同比+15.8%）</td><td data-label="时间节点">封关至2026.05.31</td></tr>
+                <tr><td data-label="指标">货车安检平均时长</td><td data-label="数据">70秒</td><td data-label="时间节点">封关至2026.06.30</td></tr>
+                <tr><td data-label="指标">享惠快速通关经营主体占比</td><td data-label="数据">超96%</td><td data-label="时间节点">封关至2026.06.30</td></tr>
               </tbody>
             </table>
             <ul>
@@ -759,9 +970,9 @@
             <table class="data-table">
               <thead><tr><th>指标</th><th>基线数据（2026.07.29）</th><th>最新数据（2026.08.18）</th></tr></thead>
               <tbody>
-                <tr><td>登记在册船舶</td><td>96艘</td><td><strong>101艘</strong></td></tr>
-                <tr><td>总运力</td><td>860万载重吨</td><td><strong>890万载重吨</strong></td></tr>
-                <tr><td>总吨位</td><td>—</td><td>超520万</td></tr>
+                <tr><td data-label="指标">登记在册船舶</td><td data-label="基线数据（2026.07.29）">96艘</td><td data-label="最新数据（2026.08.18）"><strong>101艘</strong></td></tr>
+                <tr><td data-label="指标">总运力</td><td data-label="基线数据（2026.07.29）">860万载重吨</td><td data-label="最新数据（2026.08.18）"><strong>890万载重吨</strong></td></tr>
+                <tr><td data-label="指标">总吨位</td><td data-label="基线数据（2026.07.29）">—</td><td data-label="最新数据（2026.08.18）">超520万</td></tr>
               </tbody>
             </table>
             <ul>
